@@ -1,0 +1,82 @@
+/********** Global Styling **********/
+
+body {
+  background-color: #0d0d0d;
+  color: #f9f6f6 !important;
+}
+
+i {
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+} */
+
+/********** Landing Screen Styling **********/
+
+.loading-screen {
+  z-index: 999;
+  display: flex;
+}
+
+.inner-loading {
+  display: flex;
+}
+
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: 0.5s;
+}
+
+.meal:hover .meal-layer {
+  top: 0;
+}
+
+/********** Side Nav Styling **********/
+
+.side-nav {
+  z-index: 99;
+}
+
+.nav-tab {
+  background-color: #0d0d0d;
+}
+
+.logo {
+  width: 50px;
+}
+
+/********** Main Body Styling **********/
+
+.inner-loading {
+  z-index: 9;
+  background-color: #0d0d0d;
+  display: flex;
+}
+
+/********** Search Section Styling **********/
+
+::placeholder {
+  color: #6c757d !important;
+}
+
+
+/* custom media */
+
+@media (max-width: 675px) {
+  .ps-xs {
+      padding-left: 5rem !important;
+  }
+}

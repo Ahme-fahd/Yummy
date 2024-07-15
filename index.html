@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Yummy!</title>
+  </head>
+  <body>
+    <!----------------------------------- Loading Screen ------------------------------------->
+    <div
+      class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <!----------------------------------- Side Nav ------------------------------------->
+    <div class="side-nav min-vh-100 position-fixed d-flex top-0">
+      <div
+        class="nav-tab min-vh-100 p-4 d-flex flex-column justify-content-between"
+      >
+        <div class="nav-links">
+          <ul class="list-unstyled overflow-hidden">
+            <li id="searchLnk" class="position-relative cursor-pointer py-2">
+              Search
+            </li>
+            <li
+              id="categoriesLnk"
+              class="position-relative cursor-pointer py-2"
+            >
+              Categories
+            </li>
+            <li id="areaLnk" class="position-relative cursor-pointer py-2">
+              Area
+            </li>
+            <li
+              id="ingredientsLnk"
+              class="position-relative cursor-pointer py-2 "
+            >
+              Ingredients
+            </li>
+            <li id="contactLnk" class="position-relative cursor-pointer py-2">
+              Contact Us
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="nav-header d-flex flex-column justify-content-between py-4 px-2 bg-white text-black text-center"
+      >
+        <img class="logo" src="imgs/logo.png" alt="logo" />
+        <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------- Search Container ------------------------------------->
+    <div id="searchContainer" class="container w-75"></div>
+
+    <!----------------------------------- Main Home ------------------------------------->
+    <div class="min-vh-100 position-relative">
+      <div
+        class="inner-loading position-absolute top-0 start-0 end-0 bottom-0 justify-content-center align-items-center d-none"
+      >
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+      </div>
+      <div class="container">
+        <div id="rowData" class="row py-5 g-4">
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
